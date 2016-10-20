@@ -3,16 +3,14 @@ var resizeFunction = function(){
   if(window.innerWidth < 590){
     anchors[0].innerHTML = 'Docs'
     anchors[1].innerHTML = 'Articles'
-    anchors[2].innerHTML = 'UI'
-    anchors[3].innerHTML = 'Misc'
-    anchors[4].innerHTML = 'Contact'
+    anchors[2].innerHTML = 'Misc'
+    anchors[3].innerHTML = 'Contact'
     }
   else {     
     anchors[0].innerHTML = 'Documentation'
     anchors[1].innerHTML = 'Articles'
-    anchors[2].innerHTML = 'UI Copy'
-    anchors[3].innerHTML = 'Everything Else'
-    anchors[4].innerHTML = 'Contact'
+    anchors[2].innerHTML = 'Everything Else'
+    anchors[3].innerHTML = 'Contact'
     }
   }
   
@@ -33,4 +31,8 @@ $(document).ready(function(){
           scrollTop : 0                   
       }, 500);
   });
+  $(".linkDiv").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
 });

@@ -171,76 +171,52 @@ ul {
 	height: 250px;
 }
 
+.copy > a > p {
+	text-decoration: none;
+	color: #fff;
+}
+
 /*Documentation*/
 
 #doc1 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/docs1.jpg");
 }
 
 #doc2 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/docs2.jpg");
 }
 
 #doc3 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/docs3.jpg");
 }
 
 /*Articles*/
 
 #article1 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/art1.jpg");
 }
 
 #article2 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/art2.jpg");
 }
 
 #article3 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/art3.jpg");
 }
 
-/*Blog*/
+/*Miscellaneous*/
 
 #blog1 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/misc1.jpg");
 }
 
 #blog2 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/misc2.jpg");
 }
 
 #blog3 {
-	background-image: url("../img/meheader.jpg");
+	background-image: url("../img/misc3.jpg");
 }
-
-/*UI Copy*/
-
-#ui1 {
-	background-image: url("../img/meheader.jpg");
-}
-
-#ui2 {
-	background-image: url("../img/meheader.jpg");
-}
-
-#ui3 {
-	background-image: url("../img/meheader.jpg");
-}
-
-/*Miscellaneous Other Things*/
-
-#misc1 {
-	background-image: url("../img/meheader.jpg");
-}
-
-#misc2 {
-	background-image: url("../img/meheader.jpg");
-}
-
-#misc3 {
-	background-image: url("../img/meheader.jpg");
-}
-
 
 .copy {
 	background-color: rgba(0, 43, 75, 0.3);
