@@ -306,45 +306,67 @@ label {
 	text-shadow: 2px 2px 4px #112;
 }
 
-.thing > p {
-	text-shadow: 2px 2px 4px #112;
-}
-
 .thing a p {
 	color: #fff;
 	text-decoration: none;
+	text-shadow: 2px 2px 4px #112;
 }
 
 #a {
-	background: url("../img/streets.png") center no-repeat;
+	background: linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ),
+	url("../img/streets.jpg") center no-repeat;
 }
 
 #b {
-	background: url("../img/learning.png") center no-repeat;
+	background: linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/learning.jpg") center no-repeat;
 }
 
 #c {
-	background: url("../img/mountains.png") center no-repeat;
+	background: linear-gradient(
+      rgba(1, 1, 1, 0.35), 
+      rgba(1, 1, 1, 0.35)
+    ), url("../img/mountains.jpeg") rgba(0,0,0,0.4) center no-repeat;
 }
 
 #d {
-	background: url("../img/literature.png") center no-repeat;
+	background:  linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/literature.jpg") center no-repeat;
 }
 
 #e {
-	background: url("../img/computers.png") center no-repeat;
+	background:  linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/computers.jpeg") center no-repeat;
 }
 
 #f {
-	background: url("../img/art.png") center no-repeat;
+	background:  linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/art.jpeg") center no-repeat;
 }
 
 #g {
-	background: url("../img/workstation.png") center no-repeat;
+	background:  linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/workstation.jpeg") center no-repeat;
 }
 
 #h {
-	background: url("../img/hand.png") center no-repeat;
+	background:  linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/hand.jpg") center no-repeat;
 }
 
 /*Now check out my other page styling*/
