@@ -39,9 +39,13 @@ $(document).ready(function(){
         	scrollTop : 0                   
     	}, 500);
 	});
+
+	new Elevator({
+		element: $('.elevator').get(0),
+		mainAudio: 'audio/ding.mp3',
+		endAudio: 'audio/elevator.mp3'
+	});
 });
-
-
 
 // - Add jquery arrow to take you to 'next' section (MAYBE)
 // defs want to add smooth scrolling

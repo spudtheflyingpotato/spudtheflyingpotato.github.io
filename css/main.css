@@ -414,6 +414,26 @@ a > .fa {
 	font-size: 0.8rem;
 }
 
+.elevator {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    margin: auto;
+}
+
+.elevator svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+	margin-top: 25px;
+	}
+
+.elevator p {
+	font-size: 0.7rem;
+}
+
 @media screen and (min-width: 2551px) {
 
 	#header {
