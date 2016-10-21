@@ -39,6 +39,10 @@ $(document).ready(function(){
         	scrollTop : 0                   
     	}, 500);
 	});
+	$(".linkDiv").click(function() {
+  window.location = $(this).find("a").attr("href"); 
+  return false;
+});
 
 	new Elevator({
 		element: $('.elevator').get(0),

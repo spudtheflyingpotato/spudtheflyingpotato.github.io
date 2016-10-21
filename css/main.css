@@ -44,6 +44,22 @@ ul {
   	margin: 0;
 }
 
+a:link {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -295,46 +311,40 @@ label {
 }
 
 .thing a p {
-	background-color: #112;
-	display: inline-block;
-	border: 2px solid #112;
-	border-radius: 30px;
-	padding: 10px;
 	color: #fff;
-	font-size: 0.9rem;
-	font-weight: 900;
+	text-decoration: none;
 }
 
 #a {
-	background-image: url("../img/streets.png");
+	background: url("../img/streets.png") center no-repeat;
 }
 
 #b {
-	background-image: url("../img/learning.png");
+	background: url("../img/learning.png") center no-repeat;
 }
 
 #c {
-	background-image: url("../img/mountains.png");
+	background: url("../img/mountains.png") center no-repeat;
 }
 
 #d {
-	background-image: url("../img/literature.png");
+	background: url("../img/literature.png") center no-repeat;
 }
 
 #e {
-	background-image: url("../img/computers.png");
+	background: url("../img/computers.png") center no-repeat;
 }
 
 #f {
-	background-image: url("../img/art.png");
+	background: url("../img/art.png") center no-repeat;
 }
 
 #g {
-	background-image: url("../img/workstation.png");
+	background: url("../img/workstation.png") center no-repeat;
 }
 
 #h {
-	background-image: url("../img/hand.png");
+	background: url("../img/hand.png") center no-repeat;
 }
 
 /*Now check out my other page styling*/
