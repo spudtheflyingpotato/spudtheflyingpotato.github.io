@@ -26,6 +26,13 @@ $(document).ready(function(){
 		centerMode: true,
 		variableWidth: true
 	});
+
+	new Elevator({
+		element: $('.elevator').get(0),
+		mainAudio: 'audio/elevator.mp3',
+		endAudio: 'audio/ding.mp3'
+	});
+
 	$(window).scroll(function() {
     	if ($(this).scrollTop() >= 100) {
         	$('#top').fadeIn("fast");       
@@ -43,13 +50,5 @@ $(document).ready(function(){
   window.location = $(this).find("a").attr("href"); 
   return false;
 });
+ });
 
-	new Elevator({
-		element: $('.elevator').get(0),
-		mainAudio: 'audio/ding.mp3',
-		endAudio: 'audio/elevator.mp3'
-	});
-});
-
-// - Add jquery arrow to take you to 'next' section (MAYBE)
-// defs want to add smooth scrolling

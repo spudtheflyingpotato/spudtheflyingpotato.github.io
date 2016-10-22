@@ -18,6 +18,11 @@ window.addEventListener('resize', resizeFunction)
 
 $(document).ready(function(){
 	resizeFunction();
+    new Elevator({
+		element: $('.elevator').get(0),
+		mainAudio: 'audio/elevator.mp3',
+		endAudio: 'audio/ding.mp3'
+	});
   $(window).scroll(function() {
       if ($(this).scrollTop() >= 100) {
           $('#top').fadeIn("fast");       

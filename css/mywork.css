@@ -161,30 +161,28 @@ a:active {
 
 .format {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	height: 750px;
+	flex-wrap: nowrap;
+	flex-direction: row;
 }
 
-.infoleft {
-	width: 50%;
-	height: 750px;
+.info {
 	background-color: #fff;
 	padding: 100px;
 	color: #004950;
 }
 
-.inforight {
-	width: 50%;
-	height: 750px;
-	background-color: #112;
-	padding: 100px;
-	color: #fff;
+.info h2 {
+	font-size: 2rem;
 }
 
 .example {
 	width: 50%;
 	height: 250px;
+}
+
+.copy h3 {
+	font-weight: 400;
+	text-shadow: 2px 2px #112;
 }
 
 .copy > a > p {
@@ -196,46 +194,73 @@ a:active {
 
 #doc1 {
 	background-image: url("../img/docs1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #doc2 {
 	background-image: url("../img/docs2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #doc3 {
 	background-image: url("../img/docs3.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 /*Articles*/
 
 #article1 {
 	background-image: url("../img/art1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #article2 {
 	background-image: url("../img/art2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #article3 {
 	background-image: url("../img/art3.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 /*Miscellaneous*/
 
 #blog1 {
 	background-image: url("../img/misc1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #blog2 {
 	background-image: url("../img/misc2.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #blog3 {
 	background-image: url("../img/misc3.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 .copy {
-	background-color: rgba(0, 43, 75, 0.3);
+	/*background-color: rgba(0, 43, 75, 0.3);*/
 	width: 100%;
 	height: 250px;
 	padding: 40px;
@@ -247,7 +272,7 @@ a:active {
 .otherpage {
 	padding: 1.5rem;
 	text-align: center;
-	background-image: url("../img/otherpage.png");
+	background-color: #CF5300;
 }
 
 .otherpage h2 {
@@ -256,8 +281,7 @@ a:active {
 }
 
 .otherpage h2:hover {
-	color: #e29042;
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #e29042, 0 0 0.5em #002944, 0 0 0.1em #002944, 0 10px 3px #000;
+	color: #112;
 }
 
 #contact {
@@ -289,6 +313,7 @@ a:active {
 #reasons ul li {
 	list-style: circle;
 	font-size: 0.9rem;
+	margin-left: 15px;
 }
 
 #methods {
@@ -315,6 +340,26 @@ a > .fa {
 
 #copyright p {
 	font-size: 0.8rem;
+}
+
+.elevator {
+    text-align: center;
+    cursor: pointer;
+    width: 140px;
+    margin: auto;
+}
+
+.elevator svg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+	margin-top: 25px;
+	}
+
+.elevator p {
+	font-size: 0.7rem;
 }
 
 @media screen and (min-width: 2551px) {
@@ -352,27 +397,13 @@ a > .fa {
 
 @media screen and (max-width: 975px) {
 
-	.infoleft, .inforight {
-		width: 100%;
-		height: auto;
-		order: 1;
+	.info {
 		padding: 10%;
-	}
-
-	.example {
-		width: 100%;
-		height: 300px;
-		order: 2;
 	}
 	
 	.copy {
-		padding-left: 10%
+		padding-left: 10%;
 		padding-right: 10%;
-	}
-
-	.format {
-		flex-direction: row;
-		height: auto;
 	}
 
 	.copy {
@@ -398,12 +429,28 @@ a > .fa {
 		padding-right: 10px;
 	}
 
+	.format {
+		flex-wrap: wrap;
+	}
+
+	.short {
+		width: 50%;
+	}
+
+	.long {
+		width: 100%;
+	}
+
 	.otherpage h2 {
 		font-size: 1rem;
 	}
 
 	#reasons {
-		width: 100%;	
+		width: 100%;
+	}
+
+	#reasons > ul > li {
+		margin-left: 10px;	
 	}
 
 	#methods {
@@ -434,6 +481,12 @@ a > .fa {
 		padding-right: 40px;
 	}
 
+}
+
+@media screen and (max-width: 550px){
+	.short {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 475px){

@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.3rem;
+	font-size: 1.7rem;
 }
 
 p {
@@ -289,7 +289,6 @@ label {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: rgba(0, 43, 75, 0.8);
 }
 
 .thing {
@@ -374,7 +373,7 @@ label {
 .otherpage {
 	padding: 1.5rem;
 	text-align: center;
-	background-image: url("../img/otherpage.png");
+	background-color: #CF5300;
 }
 
 .otherpage h2 {
@@ -383,8 +382,7 @@ label {
 }
 
 .otherpage h2:hover {
-	color: #e29042;
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #e29042, 0 0 0.5em #002944, 0 0 0.1em #002944, 0 10px 3px #000;
+	color: #112;
 }
 
 /*Contact me styling*/
@@ -418,6 +416,7 @@ label {
 #reasons ul li {
 	list-style: circle;
 	font-size: 0.9rem;
+	margin-left: 15px;
 }
 
 #methods {
