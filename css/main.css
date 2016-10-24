@@ -70,6 +70,13 @@ a:active {
 #header {
 	color: #fff;
 	height: 100vh;
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.3), 
+      rgba(1, 1, 1, 0.3)
+    ), url("../img/garden2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .box {
@@ -184,7 +191,7 @@ a:active {
 	text-decoration: underline;
 	font-size: 4rem;
 	color: #e5d6d6;
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #2c20ad, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #e29042, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 }
 
 .litup b span {
@@ -240,7 +247,7 @@ a:active {
 
 label {
 	color: #fee;
-	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #2c20ad, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #e29042, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
 }
 
 .checkbox-grid {
@@ -257,10 +264,10 @@ label {
 
 .photos {
 	padding: 140px;
-	background: #2C3E50; 
-	background: -webkit-linear-gradient(to bottom, #2C3E50 , #4CA1AF); 
-	background: linear-gradient(to bottom, #2C3E50 , #4CA1AF); 
-	color: #fff;        
+	background: #FF512F;
+	background: -webkit-linear-gradient(to bottom, #480048, #C04848);
+	background: linear-gradient(to bottom, #480048, #C02425, #CF5300); 
+    color: #fff;        
 }
 
 .photos h2 {
@@ -391,7 +398,7 @@ label {
 	padding: 50px 140px;
 	color: #fff;
 	background: rgba(26,23,61,1);
-	background: rgba(26,23,61,1);
+	background: rgba(24,25,61,1);
 	background: rgba(2,39,61,1);
 	background: -moz-linear-gradient(left, rgba(2,39,61,1) 0%, rgba(2,39,61,1) 19%, rgba(2,39,61,1) 35%, rgba(2,39,61,1) 63%, rgba(1,44,65,1) 83%, rgba(1,44,65,1) 95%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,39,61,1)), color-stop(19%, rgba(2,39,61,1)), color-stop(35%, rgba(2,39,61,1)), color-stop(63%, rgba(2,39,61,1)), color-stop(83%, rgba(1,44,65,1)), color-stop(95%, rgba(1,44,65,1)));
@@ -464,38 +471,6 @@ a > .fa {
 .elevator p {
 	font-size: 0.7rem;
 }
-
-@media screen and (min-width: 2551px) {
-
-	#header {
-		background: url("../img/bluewall3000.jpg") no-repeat center;
-	}
-
-}
-
-@media screen and (max-width: 2550px) {
-
-	#header {
-		background: url("../img/bluewall2560.jpg") no-repeat center;
-	}
-
-}
-
-@media screen and (max-width: 2000px) {
-
-	#header {
-		background: url("../img/bluewall2000.png") no-repeat center;
-	}
-
-}
-
-@media screen and (max-width: 1500px) {
-
-#header {
-	background: url("../img/bluewall1500.png") no-repeat center;
-	}
-
-}	
 
 @media screen and (max-width: 981px) {
 

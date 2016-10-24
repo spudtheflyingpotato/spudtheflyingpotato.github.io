@@ -194,69 +194,69 @@ a:active {
 
 #doc1 {
 	background-image: url("../img/docs1.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #doc2 {
 	background-image: url("../img/docs2.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #doc3 {
 	background-image: url("../img/docs3.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /*Articles*/
 
 #article1 {
 	background-image: url("../img/art1.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #article2 {
 	background-image: url("../img/art2.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #article3 {
 	background-image: url("../img/art3.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 /*Miscellaneous*/
 
 #blog1 {
 	background-image: url("../img/misc1.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #blog2 {
 	background-image: url("../img/misc2.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 #blog3 {
 	background-image: url("../img/misc3.jpg");
-	background-repeat:no-repeat;
-	background-size:cover;
-	background-position:center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 
 .copy {
@@ -288,7 +288,7 @@ a:active {
 	padding: 50px 140px;
 	color: #fff;
 	background: rgba(26,23,61,1);
-	background: rgba(26,23,61,1);
+	background: rgba(24,25,61,1);
 	background: rgba(2,39,61,1);
 	background: -moz-linear-gradient(left, rgba(2,39,61,1) 0%, rgba(2,39,61,1) 19%, rgba(2,39,61,1) 35%, rgba(2,39,61,1) 63%, rgba(1,44,65,1) 83%, rgba(1,44,65,1) 95%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(2,39,61,1)), color-stop(19%, rgba(2,39,61,1)), color-stop(35%, rgba(2,39,61,1)), color-stop(63%, rgba(2,39,61,1)), color-stop(83%, rgba(1,44,65,1)), color-stop(95%, rgba(1,44,65,1)));
@@ -365,7 +365,7 @@ a > .fa {
 @media screen and (min-width: 2551px) {
 
 	#header {
-		background: url("../img/books3000.jpg") no-repeat center;
+		background: url("../img/bluewall3000.jpg") no-repeat center;
 	}
 
 }
@@ -373,7 +373,7 @@ a > .fa {
 @media screen and (max-width: 2550px) {
 
 	#header {
-		background: url("../img/books2560.jpg") no-repeat center;
+		background: url("../img/bluewall2560.jpg") no-repeat center;
 	}
 
 }
@@ -381,7 +381,7 @@ a > .fa {
 @media screen and (max-width: 2000px) {
 
 	#header {
-		background: url("../img/books2000.jpg") no-repeat center;
+		background: url("../img/bluewall2000.png") no-repeat center;
 	}
 
 }
@@ -389,7 +389,7 @@ a > .fa {
 @media screen and (max-width: 1371px) {
 
 	#header {
-		background: url("../img/books1500.png") no-repeat center;
+		background: url("../img/bluewall1500.png") no-repeat center;
 	}
 
 }
