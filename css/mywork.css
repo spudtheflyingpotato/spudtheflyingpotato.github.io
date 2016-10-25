@@ -98,7 +98,7 @@ a:active {
 .nav {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	color: #e29042;
+	color: #FF512F;
 	text-align: center;
 	font-size: 0.9rem;
 	display: flex;
@@ -106,7 +106,7 @@ a:active {
 }
 
 .nav > a {
-	color: #e29042;
+	color: #FF512F;
 	text-decoration: none;
 }
 
@@ -236,7 +236,7 @@ a:active {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
-    ), url("../img/art1.jpg");
+    ), url("../img/article1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -246,7 +246,7 @@ a:active {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
-    ), url("../img/art2.jpg");
+    ), url("../img/article2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -256,7 +256,7 @@ a:active {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
-    ), url("../img/art3.jpg");
+    ), url("../img/article3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -278,7 +278,7 @@ a:active {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
-    ), url("../img/misc2.jpg");
+    ), url("../img/misc2.jpeg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -356,7 +356,7 @@ a > .fa {
 }
 
 .fa:hover {
-	color: #e29042;
+	color: #FF512F;
 	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #002944, 0 0 0.5em #002944, 0 0 0.1em #002944, 0 10px 3px #000;
 }
 
@@ -367,6 +367,11 @@ a > .fa {
 
 #copyright p {
 	font-size: 0.8rem;
+}
+
+#copyright p a {
+	color: #FF512F;
+	text-decoration: underline;
 }
 
 .elevator {

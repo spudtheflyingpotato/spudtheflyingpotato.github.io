@@ -18,7 +18,7 @@ var resizePageMenuText = function () {
 window.addEventListener('resize', resizePageMenuText)
 
 var elevatorScroll = function () {
-    ({
+    new Elevator({
         element: $('.elevator').get(0),
         mainAudio: '../audio/elevator.mp3',
         endAudio: '../audio/ding.mp3'
