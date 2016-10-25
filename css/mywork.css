@@ -107,7 +107,6 @@ a:active {
 
 .nav > a {
 	color: #FF512F;
-	text-decoration: none;
 }
 
 /*Active button*/
@@ -193,7 +192,6 @@ a:active {
 }
 
 .copy > a > p {
-	text-decoration: none;
 	color: #fff;
 }
 
@@ -263,7 +261,7 @@ a:active {
 
 /*Miscellaneous*/
 
-#blog1 {
+#misc1 {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
@@ -273,7 +271,7 @@ a:active {
 	background-position: center;
 }
 
-#blog2 {
+#misc2 {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
@@ -283,7 +281,7 @@ a:active {
 	background-position: center;
 }
 
-#blog3 {
+#misc3 {
 	background-image: linear-gradient(
       rgba(1, 1, 1, 0.6), 
       rgba(1, 1, 1, 0.6)
@@ -424,7 +422,22 @@ a > .fa {
 	}
 
 }
+
+@media screen and (max-width: 1099px) {	
 	
+	.format {
+		flex-wrap: wrap;
+	}
+
+	.short {
+		width: 50%;
+	}
+
+	.long {
+		width: 100%;
+	}
+
+}
 
 @media screen and (max-width: 975px) {
 
@@ -435,10 +448,6 @@ a > .fa {
 	.copy {
 		padding-left: 10%;
 		padding-right: 10%;
-	}
-
-	.copy {
-		height: 300px;
 	}
 
 	#contact {
@@ -458,18 +467,6 @@ a > .fa {
 	.scroll {
 		padding-left: 10px;
 		padding-right: 10px;
-	}
-
-	.format {
-		flex-wrap: wrap;
-	}
-
-	.short {
-		width: 50%;
-	}
-
-	.long {
-		width: 100%;
 	}
 
 	.otherpage h2 {
@@ -492,6 +489,13 @@ a > .fa {
 
 }
 
+@media screen and (max-width: 741px){
+	
+	.short {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 641px) {
 	
 	#headcopy > h1 {
@@ -512,12 +516,6 @@ a > .fa {
 		padding-right: 40px;
 	}
 
-}
-
-@media screen and (max-width: 550px){
-	.short {
-		width: 100%;
-	}
 }
 
 @media screen and (max-width: 475px){
@@ -547,12 +545,14 @@ a > .fa {
 }
 
 @media screen and (max-width: 371px) {
+	
 	a > .fa {
 		padding: 12px;
 	}
 }
 
 @media screen and (max-width: 340px) {
+	
 	a > .fa {
 		padding: 10px;
 	}

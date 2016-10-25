@@ -650,12 +650,14 @@ a > .fa {
 }
 
 @media screen and (max-width: 371px) {
+	
 	a > .fa {
 		padding: 12px;
 	}
 }
 
 @media screen and (max-width: 340px) {
+	
 	a > .fa {
 		padding: 10px;
 	}
