@@ -23,7 +23,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.3rem;
+	font-size: 1.5rem;
 }
 
 p {
@@ -96,7 +96,8 @@ a:active {
 }
 
 .nav {
-	padding: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	color: #e29042;
 	text-align: center;
 	font-size: 0.9rem;
@@ -177,15 +178,22 @@ a:active {
 
 .example {
 	width: 50%;
-	height: 250px;
+	height: auto;
+	min-height: 300px;
+}
+
+.copy {
+	padding: 40px;
 }
 
 .copy h3 {
-	font-weight: 400;
-	text-shadow: 2px 2px #112;
+	font-weight: 900;
+	font-size: 1.7rem;
+	color: #fff;
 }
 
 .copy > a > p {
+	font-size: 1.3rem;
 	text-decoration: none;
 	color: #fff;
 }
@@ -193,21 +201,30 @@ a:active {
 /*Documentation*/
 
 #doc1 {
-	background-image: url("../img/docs1.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/docs1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #doc2 {
-	background-image: url("../img/docs2.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/docs2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #doc3 {
-	background-image: url("../img/docs3.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/docs3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -216,21 +233,30 @@ a:active {
 /*Articles*/
 
 #article1 {
-	background-image: url("../img/art1.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/art1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #article2 {
-	background-image: url("../img/art2.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/art2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #article3 {
-	background-image: url("../img/art3.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/art3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -239,32 +265,33 @@ a:active {
 /*Miscellaneous*/
 
 #blog1 {
-	background-image: url("../img/misc1.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/misc1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #blog2 {
-	background-image: url("../img/misc2.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/misc2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
 
 #blog3 {
-	background-image: url("../img/misc3.jpg");
+	background-image: linear-gradient(
+      rgba(1, 1, 1, 0.6), 
+      rgba(1, 1, 1, 0.6)
+    ), url("../img/misc3.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-
-.copy {
-	/*background-color: rgba(0, 43, 75, 0.3);*/
-	width: 100%;
-	height: 250px;
-	padding: 40px;
-	color: #fff;
 }
 
 /*Footer*/

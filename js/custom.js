@@ -1,54 +1,59 @@
-var resizeFunction = function(){
-	var anchors = document.getElementsByClassName('change')
-  	if(window.innerWidth < 590){
-		anchors[0].innerHTML = 'Me'
-		anchors[1].innerHTML = 'Lists'
-		anchors[2].innerHTML = 'Faves'
-		anchors[3].innerHTML = 'Contact'
-  	}
-	else {     
-		anchors[0].innerHTML = 'A little more about me'
-		anchors[1].innerHTML = 'Bucket List'
-		anchors[2].innerHTML = 'Favourite things'
-		anchors[3].innerHTML = 'Get in contact'
+var resizePageMenuText = function () {
+	var anchors = $('.change')
+	if (window.innerWidth < 590) {
+		anchors.eq(0).html('Me');
+		anchors.eq(1).html('List');
+		anchors.eq(2).html('Faves');
+		anchors.eq(3).html('Contact');
+	}
+	else {
+		anchors.eq(0).html('A little more about me');
+		anchors.eq(1).html('Things I want to do');
+		anchors.eq(2).html('My favourite things');
+		anchors.eq(3).html('Get in contact');
 	}
 }
-  
-window.addEventListener('resize', resizeFunction)
 
-$(document).ready(function(){
-	resizeFunction()
+// Changes text on page resize
+window.addEventListener('resize', resizePageMenuText)
+
+var imageCarousel = function () {
 	$('.imagecarousel').slick({
 		dots: true,
-		infinite: true,
+		infe: true,
 		speed: 300,
 		slidesToShow: 1,
 		centerMode: true,
 		variableWidth: true
 	});
+}
 
-	new Elevator({
+var elevatorScroll = function () {
+	({
 		element: $('.elevator').get(0),
 		mainAudio: 'audio/elevator.mp3',
 		endAudio: 'audio/ding.mp3'
 	});
+}
 
-	$(window).scroll(function() {
-    	if ($(this).scrollTop() >= 100) {
-        	$('#top').fadeIn("fast");       
-    	} 
-    	else {
-        	$('#top').fadeOut("fast");      
-    	}
+var smoothScroll = function () {
+	$.localScroll({ filter: '.smoothScroll' });
+}
+
+var divLinker = function () {
+	/* Searches for an <a> tag inside the div and navigates 
+	to the href of the <a> tag when the div is clicked */
+	$(".linkDiv").click(function () {
+		window.location = $(this).find("a").attr("href");
+		return false;
 	});
-	$('#top').click(function() {            
-    	$('body,html').animate({
-        	scrollTop : 0                   
-    	}, 500);
-	});
-	$(".linkDiv").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
+}
+
+$(document).ready(function () {
+	resizePageMenuText();
+	imageCarousel();
+	elevatorScroll();
+	smoothScroll();
+	divLinker();
 });
- });
 

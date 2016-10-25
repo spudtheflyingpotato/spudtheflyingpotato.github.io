@@ -1,43 +1,46 @@
-var resizeFunction = function(){
-  var anchors = document.getElementsByClassName('change')
-  if(window.innerWidth < 590){
-    anchors[0].innerHTML = 'Docs'
-    anchors[1].innerHTML = 'Articles'
-    anchors[2].innerHTML = 'Misc'
-    anchors[3].innerHTML = 'Contact'
-    }
-  else {     
-    anchors[0].innerHTML = 'Documentation'
-    anchors[1].innerHTML = 'Articles'
-    anchors[2].innerHTML = 'Everything Else'
-    anchors[3].innerHTML = 'Contact'
-    }
-  }
-  
-window.addEventListener('resize', resizeFunction)
+var resizePageMenuText = function () {
+	var anchors = $('.change')
+	if (window.innerWidth < 590) {
+		anchors.eq(0).html('Docs');
+		anchors.eq(1).html('Articles');
+		anchors.eq(2).html('Misc');
+		anchors.eq(3).html('Contact');
+	}
+	else {
+		anchors.eq(0).html('Documentation');
+		anchors.eq(1).html('Articles and Reviews');
+		anchors.eq(2).html('Miscellaneous Things');
+		anchors.eq(3).html('Get in contact');
+	}
+}
 
-$(document).ready(function(){
-	resizeFunction();
-    new Elevator({
+// Changes text on page resize
+window.addEventListener('resize', resizePageMenuText)
+
+var elevatorScroll = function () {
+	({
 		element: $('.elevator').get(0),
 		mainAudio: '../audio/elevator.mp3',
 		endAudio: '../audio/ding.mp3'
 	});
-  $(window).scroll(function() {
-      if ($(this).scrollTop() >= 100) {
-          $('#top').fadeIn("fast");       
-      } 
-      else {
-          $('#top').fadeOut("fast");      
-      }
-  });
-  $('#top').click(function() {            
-      $('body,html').animate({
-          scrollTop : 0                   
-      }, 500);
-  });
-  $(".linkDiv").click(function() {
-  window.location = $(this).find("a").attr("href"); 
-  return false;
-});
+}
+
+var smoothScroll = function () {
+	$.localScroll({ filter: '.smoothScroll' });
+}
+
+var divLinker = function () {
+	/* Searches for an <a> tag inside the div and navigates 
+	to the href of the <a> tag when the div is clicked */
+	$(".linkDiv").click(function () {
+		window.location = $(this).find("a").attr("href");
+		return false;
+	});
+}
+
+$(document).ready(function () {
+	resizePageMenuText();
+	elevatorScroll();
+	smoothScroll();
+	divLinker();
 });
