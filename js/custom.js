@@ -46,7 +46,7 @@ var divLinker = function () {
 	/* Searches for an <a> tag inside the div and navigates 
 	to the href of the <a> tag when the div is clicked */
 	$(".linkDiv").click(function () {
-		window.location = $(this).find("a").attr("href");
+		window.open ($(this).find("a").attr("href"));
 		return false;
 	});
 }
