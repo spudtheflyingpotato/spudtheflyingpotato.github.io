@@ -10,7 +10,6 @@ body, html {
 
 body {
 	font-family: Raleway;
-  	color: #424242;
 }
 
 h1, h2, h3, h4, h5 {
@@ -114,7 +113,6 @@ a:active {
 
 .nav > a {
 	color: #FF512F;
-	text-decoration: none;
 }
 
 /*Active button*/
@@ -174,9 +172,9 @@ a:active {
 	line-height: 1.8;
 }
 
-/*Bucket List styling*/
+/*Awesome Things styling*/
 
-#bucketlist {
+#awesomethingslist {
 	padding: 140px 140px 140px 140px;
 	background-color: #112;
 }
@@ -199,6 +197,8 @@ a:active {
 	animation: blink linear infinite 2.5s;
 }
 
+/* Set colours to the same as the background at different points during the transition to create the effect of a flickering sign*/
+
 @keyframes blink {
 	76% {
     color: inherit;
@@ -206,7 +206,7 @@ a:active {
 	}
 
 	78% {
-		color: #333;
+		color: #112;
 	}
 
 	80% {
@@ -219,7 +219,7 @@ a:active {
 	}
 
 	82% {
-	color: #333;
+	color: #112;
 	text-shadow: none;
 	}
 
@@ -229,7 +229,7 @@ a:active {
 	}
 
 	92% {
-	color: #333;
+	color: #112;
 	text-shadow: none;
 	}
 
@@ -313,9 +313,10 @@ label {
 	font-weight: 900;
 }
 
+/*Used a text shadow to make the white text stand out better*/
+
 .thing a p, .thing a p p {
 	color: #fff;
-	text-decoration: none;
 	text-shadow: 1px 1px 2px #112;
 	font-size: 1.3rem
 }
@@ -399,6 +400,7 @@ label {
 #contact {
 	padding: 50px 140px;
 	color: #fff;
+	/*Incredibly subtle gradient background*/
 	background: rgba(26,23,61,1);
 	background: rgba(24,25,61,1);
 	background: rgba(2,39,61,1);
@@ -510,10 +512,6 @@ a > .fa {
 
 @media screen and (max-width: 825px) {
 
-	#me {
-		padding: 80px;
-	}
-
 	#headcopy {
 		width: 100%;
 		padding-left: 80px;
@@ -525,18 +523,22 @@ a > .fa {
 		padding-right: 10px;
 	}
 
+	#me {
+		padding: 80px;
+	}
+
 	#favethings {
 		padding-left: 0;
 		padding-right: 0;
 		padding-bottom: 2px;
 	}
 
-	.otherpage h2 {
-		font-size: 1rem;
+	#awesomethingslist {
+		padding: 90px 80px 100px 80px;
 	}
 
-	#bucketlist {
-		padding: 90px 80px 100px 80px;
+	.otherpage h2 {
+		font-size: 1rem;
 	}
 
 	#reasons {
@@ -553,6 +555,11 @@ a > .fa {
 
 @media screen and (max-width: 641px) {
 	
+	#headcopy {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
 	#headcopy > h1 {
     	font-size: 2rem;
 	}
@@ -561,8 +568,19 @@ a > .fa {
 		font-size: 1rem;
 	}
 
-	.thing {
-		width: 100%;
+	#me {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.photos {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	#awesomethingslist {
+		padding-left: 40px;
+		padding-right: 40px;
 	}
 
 	#favethings {
@@ -573,28 +591,12 @@ a > .fa {
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+
+	.thing {
+		width: 100%;
+	}
 	
 	#contact {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	.photos {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-
-	#bucketlist {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	#me {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-
-	#headcopy {
 		padding-left: 40px;
 		padding-right: 40px;
 	}
@@ -603,6 +605,11 @@ a > .fa {
 
 @media screen and (max-width: 475px){
 
+	#headcopy {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	
 	#headcopy > h1 {
     	font-size: 2rem;
 	}
@@ -611,7 +618,7 @@ a > .fa {
 		font-size: 1rem;
 	}
 
-	#contact {
+	#me {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
@@ -621,17 +628,12 @@ a > .fa {
 		padding-right: 30px;
 	}
 
-	#bucketlist {
+	#awesomethingslist {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
 
-	#me {
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-
-	#headcopy {
+	#contact {
 		padding-left: 25px;
 		padding-right: 25px;
 	}
@@ -645,4 +647,16 @@ a > .fa {
 		padding-right: 5px;
 	}
 
+}
+
+@media screen and (max-width: 371px) {
+	a > .fa {
+		padding: 12px;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	a > .fa {
+		padding: 10px;
+	}
 }

@@ -15,7 +15,9 @@ var resizePageMenuText = function () {
 }
 
 // Changes text on page resize
-window.addEventListener('resize', resizePageMenuText)
+$(window).resize(function () {
+    resizePageMenuText();
+});
 
 var elevatorScroll = function () {
     new Elevator({

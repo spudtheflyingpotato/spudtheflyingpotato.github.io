@@ -2,7 +2,7 @@ var resizePageMenuText = function () {
 	var anchors = $('.change')
 	if (window.innerWidth < 590) {
 		anchors.eq(0).html('Me');
-		anchors.eq(1).html('List');
+		anchors.eq(1).html('Plans');
 		anchors.eq(2).html('Faves');
 		anchors.eq(3).html('Contact');
 	}
@@ -15,7 +15,9 @@ var resizePageMenuText = function () {
 }
 
 // Changes text on page resize
-window.addEventListener('resize', resizePageMenuText)
+$(window).resize(function () {
+	resizePageMenuText();
+});
 
 var imageCarousel = function () {
 	$('.imagecarousel').slick({
