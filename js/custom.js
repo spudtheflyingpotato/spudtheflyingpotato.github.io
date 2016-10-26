@@ -22,11 +22,13 @@ $(window).resize(function () {
 var imageCarousel = function () {
 	$('.imagecarousel').slick({
 		dots: true,
-		infe: true,
+		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
 		centerMode: false,
-		variableWidth: true
+		variableWidth: true,
+		autoplay: true,
+		autoplaySpeed: 2000
 	});
 }
 
